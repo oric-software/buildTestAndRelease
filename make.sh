@@ -12,5 +12,6 @@ make
 export PATH=$PATH:$PWD
 cd ..
 
-
+ls -la
+echo $PATH
 
