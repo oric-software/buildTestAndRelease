@@ -1,14 +1,16 @@
 #! /bin/sh
 sudo apt-get install -qq wine
 sudo apt-get install -qq wget
-mkdir osdk && cd osdk    
-wget http://osdk.defence-force.org/files/osdk_1_10.zip
-unzip -o osdk_1_10.zip
+sudo apt-get install -qq git
+git clone https://github.com/cc65/cc65.git
+cd cc65
+make
+export PATH=$PATH:$PWD
 cd ..
-mkdir cc65 && cd cc65
-wget http://sourceforge.net/projects/cc65/files/cc65-snapshot-win32.zip
-unzip -o cc65-snapshot-win32.zip
+cd xa
+make
+export PATH=$PATH:$PWD
 cd ..
-ls -la
-ls -la osdk
-ls -la cc65
+
+
+
