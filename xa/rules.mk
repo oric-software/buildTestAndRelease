@@ -5,7 +5,7 @@
 # Path of the public/ directory (for instance /home/pennysbird/oric/public/)
 
 
-# OSDKPATH  = /home/user/oric/public
+OSDKPATH  = /home/travis/
 
 
 CPP       = cpp
