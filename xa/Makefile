@@ -1,4 +1,4 @@
-include ../../../rules.mk
+include rules.mk
 
 CPPFLAGS += -Wall -Iincludes
 
