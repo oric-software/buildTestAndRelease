@@ -1,6 +1,6 @@
 #! /bin/sh
 
-cd osdk/ && unzip osdk_src.zip && cd osdk_src/osdk/common/ && make
+cd osdk/ && unzip osdk_src.zip && cd osdk_src/osdk/main/common/ && make
 cd ../xa/ && make
 cd ../filepack/ && make
 
