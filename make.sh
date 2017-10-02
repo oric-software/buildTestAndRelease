@@ -7,7 +7,7 @@ make
 export PATH=$PATH:$PWD
 cd ..
 cd xa
-make all
+make
 export PATH=$PATH:$PWD
 cd ..
 ls -la
