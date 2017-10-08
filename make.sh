@@ -1,8 +1,9 @@
 #! /bin/sh
 
 cd osdk/ && unzip osdk_src.zip && cd osdk_src/osdk/main/common/ && make
-cd ../xa/ && make && cp xa /bin
-cd ../filepack/ && make && cp filepack /bin
+cd ../xa/ && make && export PATH=$PATH:`pwd`
+cd ../filepack/ && make && export PATH=$PATH:`pwd`
+echo $PATH
 
 cd ../../../../
 
