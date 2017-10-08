@@ -1,8 +1,8 @@
 #! /bin/sh
 
 cd osdk/ && unzip osdk_src.zip && cd osdk_src/osdk/main/common/ && make
-cd ../xa/ && make && cp xa ../../../../
-cd ../filepack/ && make && cp filepack ../../../../
+cd ../xa/ && make && cp xa /bin
+cd ../filepack/ && make && cp filepack /bin
 
 cd ../../../../
 
