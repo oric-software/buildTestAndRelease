@@ -1,8 +1,8 @@
 #! /bin/sh
 
 cd osdk/ && unzip osdk_src.zip && cd osdk_src/osdk/main/common/ && make
-cd ../xa/ && make && cp /home/travis/bin && chmod +x /home/travis/bin/xa
-cd ../filepack/ && make && cp /home/travis/bin && chmod +x /home/travis/bin/filepack
+cd ../xa/ && make && cp xa /home/travis/bin && chmod +x /home/travis/bin/xa
+cd ../filepack/ && make && cp filepack /home/travis/bin && chmod +x /home/travis/bin/filepack
 echo $PATH
 
 cd ../../../../
