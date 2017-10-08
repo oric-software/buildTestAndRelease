@@ -8,6 +8,7 @@ echo $PATH
 cd ../../../../
 
 git clone https://github.com/cc65/cc65.git
+git clone https://github.com/jedeoric/telemon.git
 #cd cc65
 #make >> output_cc65.log
 #export PATH=$PATH:$PWD
