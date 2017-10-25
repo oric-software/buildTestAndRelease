@@ -2,7 +2,8 @@
 $file=$argv[1];
 $hash=$argv[2];
 $cpu=$argv[3];
-$url="https://cdn.oric.org/publish.php?hash=$hash&path=/home/oricoujr/www/ftp/orix/dists/orix1/official/$cpu/$file";
+$archive=$argv[4];
+$url="https://cdn.oric.org/publish.php?hash=$hash&path=/home/oricoujr/www/ftp/orix/dists/orix1/official/$archive/$cpu/$file";
 $image_path="$file";
 $file_on_dir_not_url="";
 $image = fopen($image_path, "rb");
