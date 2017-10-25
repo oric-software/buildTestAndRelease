@@ -1,4 +1,4 @@
-<?
+<?php
 $file=$argv[1];
 $hash=$argv[2];
 $cpu=$argv[3];
