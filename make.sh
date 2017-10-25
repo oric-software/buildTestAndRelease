@@ -1,4 +1,7 @@
 #! /bin/sh
+apt-get update -y
+apt-get install php
+apt-get install php-curl
 
 cd osdk/ && unzip osdk_src.zip && cd osdk_src/osdk/main/common/ && make
 cd ../xa/ && make && cp xa /home/travis/bin && chmod +x /home/travis/bin/xa
