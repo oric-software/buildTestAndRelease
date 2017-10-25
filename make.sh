@@ -1,5 +1,6 @@
 #! /bin/sh
-apt-get update -y
+
+sudo apt-get update -y -qq
 apt-get install php
 apt-get install php-curl
 
