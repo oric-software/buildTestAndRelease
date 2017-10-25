@@ -22,5 +22,5 @@ cp bin/ar65 /home/travis/bin && chmod +x /home/travis/bin/ar65
 cp bin/ld65 /home/travis/bin && chmod +x /home/travis/bin/ld65
 cd ..
 
-git clone https://github.com/jedeoric/telemon.git
+git clone https://github.com/jedeoric/telemon.git ../../
 ls -l
