@@ -1,8 +1,8 @@
 #! /bin/sh
 
-sudo apt-get update -y -qq
-apt-get install php
-apt-get install php-curl
+#rem sudo apt-get update -y -qq
+#apt-get install php
+#apt-get install php-curl
 
 cd osdk/ && unzip osdk_src.zip && cd osdk_src/osdk/main/common/ && make
 cd ../xa/ && make && cp xa /home/travis/bin && chmod +x /home/travis/bin/xa
@@ -23,4 +23,4 @@ cp bin/ld65 /home/travis/bin && chmod +x /home/travis/bin/ld65
 cd ..
 
 git clone https://github.com/jedeoric/telemon.git
-
+ls -l
