@@ -23,6 +23,8 @@ cp bin/ar65 /home/travis/bin && chmod +x /home/travis/bin/ar65
 cp bin/ld65 /home/travis/bin && chmod +x /home/travis/bin/ld65
 cp bin/co65 /home/travis/bin && chmod +x /home/travis/bin/co65
 cd ..
+# If telemon folder is already here, it means that we build telemon, we don't need to clone it
+if [ ! -d "../../../telemon/" ]; then
 mkdir ../../../telemon/
 git clone https://github.com/jedeoric/telemon.git ../../../telemon/ 
-
+fi
