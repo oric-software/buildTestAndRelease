@@ -7,7 +7,7 @@
 cd osdk/ && unzip osdk_src.zip && cd osdk_src/osdk/main/common/ && make
 cd ../xa/ && make && cp xa /home/travis/bin && chmod +x /home/travis/bin/xa
 cd ../filepack/ && make && cp filepack /home/travis/bin && chmod +x /home/travis/bin/filepack
-cd ../Ym2Mym/ && make && cp ym2mym /home/travis/bin && chmod +x /home/travis/bin/ym2mym
+cd ../Ym2Mym/ && make && ls -l && cp ym2mym /home/travis/bin && chmod +x /home/travis/bin/ym2mym
 echo $PATH
 
 cd ../../../../
@@ -25,6 +25,4 @@ cp bin/co65 /home/travis/bin && chmod +x /home/travis/bin/co65
 cd ..
 mkdir ../../../telemon/
 git clone https://github.com/jedeoric/telemon.git ../../../telemon/ 
-echo Arbo current && ls -l && echo arbo en dessous && ls -l ../ && echo arboencore && ls -l ../../
-ls -l ../../telemon/
-ls -l
+
