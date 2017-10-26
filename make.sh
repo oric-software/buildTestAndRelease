@@ -21,8 +21,8 @@ cp bin/cc65 /home/travis/bin && chmod +x /home/travis/bin/cc65
 cp bin/ar65 /home/travis/bin && chmod +x /home/travis/bin/ar65
 cp bin/ld65 /home/travis/bin && chmod +x /home/travis/bin/ld65
 cd ..
-mkdir ../../telemon/
-git clone https://github.com/jedeoric/telemon.git ../../telemon/ 
+mkdir ../../../telemon/
+git clone https://github.com/jedeoric/telemon.git ../../../telemon/ 
 echo Arbo current && ls -l && echo arbo en dessous && ls -l ../ && echo arboencore && ls -l ../../
 ls -l ../../telemon/
 ls -l
