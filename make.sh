@@ -28,3 +28,8 @@ if [ ! -d "../../../telemon/" ]; then
 mkdir ../../../telemon/
 git clone https://github.com/jedeoric/telemon.git ../../../telemon/ 
 fi
+
+if [ ! -d "../../../orix/" ]; then
+mkdir ../../../orix/
+git clone https://github.com/oric-software/orix.git ../../../orix/ 
+fi
