@@ -38,3 +38,4 @@ fi
 
 git clone https://github.com/assinie/md2hlp.git
 cp md2hlp/src/md2hlp.py $HOMEDIRBIN
+cp md2hlp/src/md2hlp.cfg $HOMEDIRBIN
