@@ -10,8 +10,6 @@ if (isset($argv[5]))
 }
 else
     $target="official";
-    
-
 
 $url="https://cdn.oric.org/publish.php?hash=$hash&path=/home/oricoujr/www/ftp/orix/dists/orix1/$target/$archive/$cpu/$file";
 $image_path="$file";

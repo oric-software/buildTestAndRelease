@@ -4,6 +4,8 @@
 #apt-get install php
 #apt-get install php-curl
 
+HOMEDIRBIN=/home/travis/bin/
+
 cd osdk/ && unzip osdk_src.zip && cd osdk_src/osdk/main/common/ && make
 cd ../xa/ && make && cp xa /home/travis/bin && chmod +x /home/travis/bin/xa
 cd ../filepack/ && make && cp filepack /home/travis/bin && chmod +x /home/travis/bin/filepack
@@ -33,3 +35,6 @@ if [ ! -d "../../../orix/" ]; then
 mkdir ../../../orix/
 git clone https://github.com/oric-software/orix.git ../../../orix/ 
 fi
+
+git clone https://github.com/assinie/md2hlp.git
+cp md2hlp/src/md2hlp.py $HOMEDIRBIN
