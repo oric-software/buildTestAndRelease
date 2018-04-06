@@ -27,7 +27,7 @@ cp bin/ar65 $HOMEDIRBIN && chmod +x $HOMEDIRBIN/ar65
 cp bin/ld65 $HOMEDIRBIN && chmod +x $HOMEDIRBIN/ld65
 cp bin/co65 $HOMEDIRBIN && chmod +x $HOMEDIRBIN/co65
 cd ..
-# If telemon folder is already here, it means that we build telemon, we don't need to clone it
+# If orix folder is already here, it means that we build orix, we don't need to clone it
 
 if [ ! -d "../../../orix/" ]; then
 mkdir ../../../orix/
@@ -39,9 +39,7 @@ cp md2hlp/src/md2hlp.py $HOMEDIRBIN
 cp md2hlp/src/md2hlp.cfg $HOMEDIRBIN
 
 
-python get-pip.py
-pip install --upgrade pip
-pip install mkdocs
+
 
 
 
