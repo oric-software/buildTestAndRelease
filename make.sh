@@ -12,11 +12,11 @@ echo HOMEDIRBIN  defined
 fi
 
 cd osdk/ && unzip osdk_src.zip && cd osdk_src/osdk/main/common/ && make
-cd ../xa/ && make && cp xa /home/travis/bin && chmod +x /home/travis/bin/xa
-cd ../filepack/ && make && cp filepack /home/travis/bin && chmod +x /home/travis/bin/filepack
+cd ../xa/ && make && cp xa $HOMEDIRBIN && chmod +x $HOMEDIRBIN/xa
+cd ../filepack/ && make && cp filepack $HOMEDIRBIN && chmod +x $HOMEDIRBIN/filepack
 ls -l Ym2Mym/ && ls -l Ym2Mym/source
-cd ../Ym2Mym/ && make  && cp Ym2Mym /home/travis/bin && chmod +x /home/travis/bin/Ym2Mym
-ls /home/travis/bin
+cd ../Ym2Mym/ && make  && cp Ym2Mym $HOMEDIRBIN && chmod +x $HOMEDIRBIN/Ym2Mym
+ls $HOMEDIRBIN
 echo $PATH
 
 cd ../../../../
