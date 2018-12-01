@@ -4,11 +4,12 @@
 #apt-get install php
 #apt-get install php-curl
 
-if [ -z "$HOMEDIRBIN" ]; then
+if [ -z "$1" ]; then
 HOMEDIRBIN=/home/travis/bin/
 echo Empty set it
 else
-echo HOMEDIRBIN  defined
+echo HOMEDIRBIN defined from command line
+HOMEDIRBIN=$1
 fi
 
 cd osdk/ && unzip osdk_src.zip && cd osdk_src/osdk/main/common/ && make
