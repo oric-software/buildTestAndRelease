@@ -11,7 +11,7 @@ if (isset($argv[5]))
 else
     $target="official";
 
-$url="https://cdn.oric.org/publish.php?hash=$hash&path=/home/oricoujr/www/ftp/orix/dists/orix1/$target/$archive/$cpu/$file";
+$url="https://cdn.oric.org/publish.php?hash=$hash&path=/home/oricoujr/www/ftp/orix/dists/$target/$archive/$cpu/$file";
 $image_path="$file";
 $file_on_dir_not_url="";
 $image = fopen($image_path, "rb");
